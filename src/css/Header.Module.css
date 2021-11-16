@@ -1,0 +1,278 @@
+
+  .header{
+    height:95vh;
+	position:relative;
+  }
+
+  .headerslider1{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    /*background-image:linear-gradient(to right bottom, hsl(#416c48ff,0.5), hsl(#4f612a,0.5)), url(../assets/hotel2.jpg);*/
+    background-image: linear-gradient(to right bottom, rgba(32, 100, 47, 0.8), rgba(67, 201, 73, 0.8)), url(../assets/hotel1.jpg);
+    background-position:top;
+    background-size:cover;
+    animation: fade1 10s infinite;
+  }
+
+.headerslider2{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(to right bottom, rgba(32, 100, 47, 0.8), rgba(67, 201, 73, 0.8)), url(../assets/hotel2.jpg);
+    background-position:top;
+    background-size:cover;
+    animation:fade2 10s infinite;
+}
+
+.headerslider3 {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(to right bottom, rgba(32, 100, 47, 0.8), rgba(67, 201, 73, 0.8)), url(../assets/hotel3.jpg);
+    background-position:top;
+    background-size:cover;
+    animation:fade3 10s infinite;
+}
+
+.headerslider4 {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(to right bottom, rgba(32, 100, 47, 0.8), rgba(67, 201, 73, 0.8)), url(../assets/hotel4.jpg);
+    background-position:top;
+    background-size:cover;
+    animation:fade4 10s infinite;
+    }
+
+    .headertext, .headerlogobox, .headerbtnbox{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width:80%;
+      margin: auto;
+    }
+
+    .headerlogobox{
+      flex-direction: column;
+    }
+
+    .nav{
+      width: 100%;
+      margin: auto;
+      margin-top: 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family:"Satisfy",serif;
+      font-size:1.3rem;
+      z-index: 9000;
+    }
+
+    .nav a{
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .headerlogo{
+      z-index: 9000;
+    }
+
+    .headertext{
+      margin-top: -2em;
+    }
+
+    .heading{
+      z-index: 9000;
+      color: white;
+      margin-bottom:1.5rem;
+      font-weight:400;
+    }
+    
+    .headingprimarymain {
+      display:block;
+      text-transform:uppercase;
+      font-size:7rem;
+      margin-top: -19px;
+      }
+    
+      .headingprimarysub {
+      display:block;
+      font-family:"Satisfy",serif;
+      font-size:1.5rem;
+      font-style: italic;
+      }
+
+.headerbtnbox a{
+          text-decoration: none;
+          text-transform :uppercase;
+          padding:1rem 2rem;
+          border-radius:5rem;
+          font-size:1rem;
+          position:relative;
+          background-color:#846c38;
+          color:#fff;
+          display:inline-block;
+          transition:all .2s;
+}
+      
+.headerbtnbox a:hover {
+          outline:none;
+          transform:translateY(-3px);
+          box-shadow:0 1rem 2rem  rgba(#000, .5);
+}
+      
+.headerbtn:active {
+          transform:translateY(-1px);
+          box-shadow:0 .5rem 1rem rgba(#000, .5);
+}
+      
+
+
+  @keyframes fade1 {
+
+	0% {
+		opacity:1;
+	}
+
+	25% {
+		opacity:0;
+	}
+
+	50% {
+		opacity:0;
+	}
+
+	75% {
+		opacity:0;
+	}
+
+	100% {
+		opacity:1;
+	}
+}
+
+@keyframes fade2 {
+
+	0% {
+		opacity:0;
+	}
+
+	25% {
+		opacity:1;
+	}
+
+	50% {
+		opacity:0;
+	}
+
+	75% {
+		opacity:0;
+	}
+
+	100% {
+		opacity:0;
+	}
+}
+
+@keyframes fade3 {
+
+	0% {
+		opacity:0;
+	}
+
+	25% {
+		opacity:0;
+	}
+
+	50% {
+		opacity:1;
+	}
+
+	75% {
+		opacity:0;
+	}
+
+	100% {
+		opacity:0;
+	}
+}
+
+@keyframes fade4 {
+
+	0% {
+		opacity:0;
+	}
+
+	25% {
+		opacity:0;
+	}
+
+	50% {
+		opacity:0;
+	}
+
+	75% {
+		opacity:1;
+	}
+
+	100% {
+		opacity:0;
+	}
+}
+
+@media screen and (max-width: 705px) {
+
+  .headingprimarymain {
+    display:block;
+    text-transform:uppercase;
+    font-size:4rem;
+    margin-top: -19px;
+    }
+  
+    .headingprimarysub {
+    display:block;
+    font-family:"Satisfy",serif;
+    font-size:1.3rem;
+    font-style: italic;
+    }
+  
+}
+
+@media screen and (max-width: 560px) {
+
+	.nav{
+    font-size:1rem;
+  }
+	  
+	}
+
+  @media screen and (max-width: 460px) {
+
+    .nav{
+      font-size:.7rem;
+    }
+
+    .headingprimarymain {
+      font-size: 3rem;
+      }
+
+    .headerbtnbox{
+      flex-direction: column;
+    }
+
+    .headerbtn{
+      margin-top: 1em;
+    }
+      
+    }
+ 

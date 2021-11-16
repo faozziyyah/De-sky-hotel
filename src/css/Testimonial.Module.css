@@ -1,0 +1,160 @@
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.headingsecondary {
+	font-size:2.5rem;
+	text-transform:uppercase;
+	font-weight:700;
+	background-image:linear-gradient(to right,#416c48ff, #ffb900);
+	background-clip:text;
+	color:transparent;
+	transition:all 1s;
+}
+
+.headingsecondary:hover {
+		transform:skewY(2deg) skewX(15deg);
+		text-shadow:.5rem  2rem 2rem rgba(black, 0.2);
+}
+
+.video{
+    position:relative;
+	top: 2em;
+	left:0;
+	z-index:-1;
+	opacity:.4;
+	width:100%;
+	height: 33rem;
+	overflow:hidden;
+}
+
+.videocontent{
+    width:100%;
+	height:100%;
+	object-fit:cover;
+}
+
+.videooverlay{
+    position:absolute;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background-color: #2998ff;
+	opacity:.5;
+	z-index:2;
+}
+
+.testimonial{
+	padding-top: 3em;
+	padding-bottom: 5em;
+	background-image: linear-gradient(to right bottom, rgba(144, 193, 240, 0.2), rgba(112, 168, 221, 0.2)), url(../assets/hotel2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 2em;
+}
+
+.row{
+	display: flex;
+	width:80%;
+	margin: auto;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 3em;
+}
+
+.testimonial1{
+	width:40%;
+	background-color: white;
+	opacity: .7;
+	box-shadow:0 3rem 6rem (black,.1);
+	display:block;
+	border-radius:2rem;
+	overflow:hidden;
+}
+
+.testimonialshape{
+	float:left;
+	width:10rem;
+	height:10rem;
+	-webkit-clip-path:circle(90% at 3% 8%);
+	clip-path:circle(90% at 3% 8%);
+	-webkit-shape-outside:circle(100% at 3% 8%);
+	shape-outside:circle(100% at 3% 8%);
+	transform:translate(-3rem);
+}
+
+.testimonialimage{
+	height:100%;
+	transform:scale(1.7);
+	transition:all .2s;
+}
+
+.testimonial1:hover .testimonialimage{
+	transform: scale(1.4);
+	filter: blur(3px) brightness(80%);
+}
+
+.testimonialtext{
+	padding:1rem;
+}
+
+.headingtertiary {
+	font-size: 1rem;
+	font-weight:700;
+	text-transform:uppercase;
+}
+
+.testimonialcaption{
+	position:absolute;
+	top:50%;
+	left: 4.5em;
+	justify-content: center;
+	color: white;
+	text-transform:uppercase;
+	font-size:1.2rem;
+	opacity:0;
+	transition:all .5s;
+}
+
+.testimonial1:hover .testimonialcaption{
+	opacity:1;
+	transform:translate(-50%,-80%);
+}
+
+@media screen and (max-width: 960px) {
+
+	.row{
+		flex-direction: column;
+		margin-top: -1em;
+	}
+
+	.testimonial1{
+		width: 60%;
+		margin: auto;
+		margin-top: 1em;
+	}
+	 
+   }
+
+   @media screen and (max-width: 705px) {
+
+	.testimonial1{
+		width: 90%;
+	}
+	 
+   }
+
+   @media screen and (max-width: 480px) {
+
+	.testimonial1{
+		width: 100%;
+	}
+	 
+   }
+   

@@ -1,0 +1,212 @@
+.amenities {
+	background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.headingsecondary {
+	font-size:2.5rem;
+	text-transform:uppercase;
+	font-weight:700;
+	background-image:linear-gradient(to right,#416c48ff, #ffb900);
+	background-clip:text;
+	color:transparent;
+	transition:all 1s;
+}
+
+.headingsecondary:hover {
+		transform:skewY(2deg) skewX(15deg);
+		text-shadow:.5rem  2rem 2rem rgba(black, 0.2);
+}
+
+.content{
+    display: flex;
+    width:100%;
+    margin: auto;
+    margin-top: 3em;
+    justify-content: space-between;
+}
+
+.amenitytop, .amenitybottom{
+    display: flex;
+    width: 49.4%;
+    justify-content: space-between;
+}
+
+.amenity{
+    width:49%;
+}
+
+.amenity1, .amenity2, .amenity3, .amenity4{
+    border-radius:3px;
+	box-shadow:0 1.5rem 4rem rgba(17, 17, 17, .15);
+	width: 100%;
+	height:30rem;
+	color: white;
+	position:relative;
+    background-size:cover;
+	background-position:78% 50%;
+}
+
+.amenity1{
+    background-image: linear-gradient(to right bottom, rgba(65, 108, 72, 0.5), rgba(79, 97, 42, 0.5)), url(../assets/amenity-img-1.jpg);
+}
+
+.amenity2{
+    background-image: linear-gradient(to right bottom, rgba(65, 108, 72, 0.5), rgba(79, 97, 42, 0.5)), url(../assets/amenity-img-2.jpg);
+}
+
+.amenity3{
+    background-image: linear-gradient(to right bottom, rgba(65, 108, 72, 0.5), rgba(79, 97, 42, 0.5)), url(../assets/amenity-img-3.jpg);
+}
+
+.amenity4{
+    background-image: linear-gradient(to right bottom, rgba(65, 108, 72, 0.5), rgba(79, 97, 42, 0.5)), url(../assets/amenity-img-4.jpg);
+}
+
+.amenityoverlay{
+    position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:30rem;
+		background-image: linear-gradient(to right bottom, #416c48ff, #4f612a);
+		opacity: 0;
+		transition: opacity .2s;
+}
+
+.amenitytitle{
+    font-size: 3.5rem;
+	text-transform:uppercase;
+	position:absolute;
+	top:30%;
+	justify-content: center;
+    text-align: center;
+	opacity:.7;
+	transition: opacity .2s;
+}
+
+.amenitytitle:hover{
+    opacity: 0;
+}
+
+.amenitycontent{
+    background-image: linear-gradient(to right bottom, rgba(65, 108, 72, 0.8), rgba(79, 97, 42, 0.8));
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+	width:100%;
+    height: 30rem;
+    margin: auto;
+    position:absolute;
+	top: .5%;
+	opacity:0;
+	transition: all .2s;
+}
+
+.amenity1:hover .amenitytitle{
+    opacity: 0;
+}
+
+.amenity2:hover .amenitytitle{
+    opacity: 0; 
+}
+
+.amenity3:hover .amenitytitle{
+    opacity: 0; 
+}
+
+.amenity4:hover .amenitytitle{
+    opacity: 0; 
+}
+
+.amenity1:hover .amenitycontent{
+    opacity: 1;
+}
+
+.amenity2:hover .amenitycontent{
+    opacity: 1;
+}
+
+.amenity3:hover .amenitycontent{
+    opacity: 1;
+}
+
+.amenity4:hover .amenitycontent{
+    opacity: 1;
+}
+
+.headingtertiary {
+	font-size: 1.6rem;
+	font-weight:700;
+	text-transform:uppercase;
+}
+
+.text{
+    font-size:1rem;
+    text-align:center;
+    width:80%;
+}
+
+@media screen and (max-width: 960px) {
+
+ .content{
+     flex-direction:column;
+ }
+
+ .amenitytop, .amenitybottom{
+     width:80%;
+     margin: auto;
+ }
+
+ .amenitybottom{
+     margin-top: 1em;
+ }
+  
+}
+
+@media screen and (max-width: 585px) {
+
+    .content{
+        margin-top: -1em;
+    }
+
+	.amenitytop, .amenitybottom{
+        flex-direction:column;
+        width: 100%;
+        margin: auto;
+    }
+
+    .amenitybottom{
+        margin-top: 1em;
+    }
+
+    .amenity{
+        width:80%;
+        margin: auto;
+        margin-top: 1em;
+    }
+	 
+   }
+
+   @media screen and (max-width: 460px) {
+
+   .amenitytitle{
+       font-size: 2rem;
+       text-align: center;
+   }
+	 
+   }
