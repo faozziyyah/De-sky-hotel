@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/De-sky-hotel/static/css/main.563043a7.chunk.css",
+    "main.js": "/De-sky-hotel/static/js/main.4542434b.chunk.js",
+    "main.js.map": "/De-sky-hotel/static/js/main.4542434b.chunk.js.map",
+    "runtime-main.js": "/De-sky-hotel/static/js/runtime-main.8724a3c6.js",
+    "runtime-main.js.map": "/De-sky-hotel/static/js/runtime-main.8724a3c6.js.map",
+    "static/js/2.55b7d373.chunk.js": "/De-sky-hotel/static/js/2.55b7d373.chunk.js",
+    "static/js/2.55b7d373.chunk.js.map": "/De-sky-hotel/static/js/2.55b7d373.chunk.js.map",
+    "index.html": "/De-sky-hotel/index.html",
+    "static/css/main.563043a7.chunk.css.map": "/De-sky-hotel/static/css/main.563043a7.chunk.css.map",
+    "static/js/2.55b7d373.chunk.js.LICENSE.txt": "/De-sky-hotel/static/js/2.55b7d373.chunk.js.LICENSE.txt",
+    "static/media/Amenities.Module.css": "/De-sky-hotel/static/media/amenity-img-4.1a107221.jpg",
+    "static/media/bed.84013736.jpg": "/De-sky-hotel/static/media/bed.84013736.jpg",
+    "static/media/bed1.6fd19ac6.jpg": "/De-sky-hotel/static/media/bed1.6fd19ac6.jpg",
+    "static/media/bed2.3e2f4129.jpg": "/De-sky-hotel/static/media/bed2.3e2f4129.jpg",
+    "static/media/Header.Module.css": "/De-sky-hotel/static/media/hotel4.868f29a0.jpg",
+    "static/media/Testimonial.Module.css": "/De-sky-hotel/static/media/hotel2.1d46ae29.jpg",
+    "static/media/member-1-img.5c8cb7c3.jpg": "/De-sky-hotel/static/media/member-1-img.5c8cb7c3.jpg",
+    "static/media/member-2-img.fbab7436.jpg": "/De-sky-hotel/static/media/member-2-img.fbab7436.jpg",
+    "static/media/Membership.Module.css": "/De-sky-hotel/static/media/plan-img-3.fcf92065.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8724a3c6.js",
+    "static/js/2.55b7d373.chunk.js",
+    "static/css/main.563043a7.chunk.css",
+    "static/js/main.4542434b.chunk.js"
+  ]
+}
